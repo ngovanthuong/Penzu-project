@@ -73,7 +73,7 @@ export class RegisterComponent implements OnInit {
           this.isRegister = true;
           this.isRegisterFail = false;
           alert('Bạn Đã Đăng Ký Thành Công');
-          this.router.navigate(['/auth/login']);
+
         },
         error => {
           console.log(error);

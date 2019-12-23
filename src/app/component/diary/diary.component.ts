@@ -9,10 +9,18 @@ import {DiaryService} from '../../service/diary/diary.service';
   styleUrls: ['./diary.component.scss']
 })
 export class DiaryComponent implements OnInit {
-  constructor() { }
+  private info: any;
+  constructor(private token: TokenStorageService) { }
 
   ngOnInit() {
+    this.info = {
+      token: this.token.getToken(),
+      username: this.token.getUsername(),
+      authorities: this.token.getAuthorities(),
+    };
   }
+
+
 
 
 

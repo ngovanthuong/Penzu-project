@@ -13,6 +13,7 @@ import {Router} from '@angular/router';
 export class DiaryListComponent implements OnInit {
   listDiary: Diary[];
   diaryId: string;
+  title: '';
 
   constructor(private token: TokenStorageService,
               private userService: UserService,
@@ -50,4 +51,8 @@ export class DiaryListComponent implements OnInit {
       }
     );
   }
+
+  // searchByTitle() {
+  //
+  // }
 }

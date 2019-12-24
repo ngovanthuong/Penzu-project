@@ -35,10 +35,10 @@
       <tbody>
       <tr *ngFor="let diary of listDiary, index as i">
         <th scope="row">{{i + 1}}</th>
-        <td><a [routerLink]="'/diary/' + diary.id">{{diary.title.slice(0,65)}}...</a></td>
+        <td><a [routerLink]="'/detail-diary/' + diary.id">{{diary.title.slice(0,65)}}...</a></td>
         <td>{{diary.date}}</td>
         <td>
-          <button type="button" class="btn btn-outline-primary" [routerLink]="'/library/updateDiary/' + diary.id">
+          <button type="button" class="btn btn-outline-primary" [routerLink]="'/update-diary/' + diary.id">
             Update
           </button>&nbsp;
           <button (click)="getDiaryId(diary.id)" type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal">

@@ -16,7 +16,6 @@ export class DiaryCreateComponent implements OnInit {
   formDiary = new FormGroup({
     title: new FormControl(''),
     description: new FormControl(''),
-    blobString: new FormControl(''),
     content: new FormControl('')
   });
 
